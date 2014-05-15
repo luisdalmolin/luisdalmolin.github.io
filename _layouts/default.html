@@ -1,44 +1,71 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<html class="no-js" lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+    <title>{{ page.title }}</title>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="http://luisdalmolin.com.br/wp-content/themes/luisdalmolin/css/pure.css">
+    <link rel="stylesheet" href="http://luisdalmolin.com.br/wp-content/themes/luisdalmolin/style.css">
+    <link rel="publisher" href="https://plus.google.com/118015701305507171424/posts">
+</head>
 
-    </head>
-    <body>
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <header class="header">
+                <hgroup>
+                    <h1 class="brand-title">Luís Dalmolin</h1>
+                </hgroup>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="pure-button" href="http://luisdalmolin.com.br/">Blog</a>
+                        </li>
 
-          {{ content }}
+                        <li class="nav-item">
+                            <a class="pure-button" href="/projetos">Projetos</a>
+                        </li>
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
+                        <li class="nav-item">
+                            <a class="pure-button" href="/portfolio">Portfólio</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div><!-- .sidebar -->
 
-    </body>
+        <div class="pure-u-1">
+            <div class="content">
+                {{ content }}
+            </div><!-- .content -->
+
+            <footer class="footer">
+                <div class="pure-menu pure-menu-horizontal pure-menu-open">
+                    <ul>
+                        <li><a href="http://twitter.com/luisdalmolin">Twitter</a></li>
+                        <li><a href="http://github.com/luisdalmolin">Github</a></li>
+                        <li><a href="http://github.com/yui/pure/">Made with Pure CSS</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div><!-- .pure-u-1 --> 
+    </div><!-- .pure-g-r -->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-10402950-10']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+</body>
 </html>
