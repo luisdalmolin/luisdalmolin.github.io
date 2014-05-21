@@ -3,28 +3,9 @@ layout: default
 title: Luís Dalmolin
 ---
 
-<div id="home">
-    <h1 class="content-subhead">Blog</h1>
-    
-    {% for post in site.posts %}
-        <section class="post">
-            <header class="post-header">
-                <img class="post-avatar"
-                alt="Luís Dalmolin" src="http://www.gravatar.com/avatar/1a08c08cc8f79d1140c8d9cbaa974971?d=&s=50"
-                height="48" width="48">
-
-                <h2 class="post-title">{{ post.title }}</h2>
-
-                <p class="post-meta">By <a class="post-author" href="https://plus.google.com/118015701305507171424/" rel="me">Luís Dalmolin</a></p>
-            </header><!-- .post-header -->
-
-            <div class="post-description">
-                <p>Se você tem um Mac, provavelmente já precisou copiar dados para um HD Externo, e viu que o seu OS X não possui suporte de escrita para o sistema de arquivos da Microsoft (NTFS). Nativamente, só existe o suporte para leitura de arquivos NTFS. Para solucionar este problema, existem algumas boas soluções pagas como o Paragon NTFS ou o NTFS for Mac. Mas claro, que não queremos (nem precisamos) pagar por isso. NTFS-3G Para isso, alguém criou o NTFS 3G. Testei pela primeira vez no Snow Leopard e funcionava legal. Porém, no Lion e no Mountain Lion é preciso instalar [...]</p>
-            </div><!-- .post-description -->
-
-            <div class="post-links">
-                <a href="{{ post.url }}" class="pure-button pure-button-primary">Continue lendo</a>
-            </div>
-        </section><!-- .post -->
-    {% endfor %}
-</div>
+<section id="home">
+    <h1 class="content-subhead">Luís Dalmolin</h1>
+        
+    <p>Sou um desenvolvedor web full stack, atualmente trabalhando na <a href="http://www.escape.ppg.br">Escape</a>, uma agência de comunicação.</p>
+    <p>Confira alguns dos meus <a href="/projetos">projetos</a> e alguns dos trabalhos que já fiz no meu <a href="/portfolio">portfólio</a>.</p>
+</section>
