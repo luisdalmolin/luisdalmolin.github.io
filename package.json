@@ -1,0 +1,8 @@
+{
+    "devDependencies" : {
+        "grunt-contrib-compass" : "*",
+        "grunt-contrib-watch" : "*",
+        "grunt-notify": "*",
+        "grunt" : "~0.4.4"
+    }
+}
