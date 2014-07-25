@@ -1,0 +1,12 @@
+@mixin linear-gradient($cor1, $cor2, $direction: top) {
+    background-color: $cor2;
+    @include background-image(linear-gradient($direction, $cor1, $cor2));
+}
+
+@mixin clearfix() {
+    &::after {
+        display: table;
+        content: "";
+        clear: both;
+    }
+}

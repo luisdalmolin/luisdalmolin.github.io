@@ -1,0 +1,34 @@
+.header {
+    padding: 35px 0;
+    text-align: center;
+    font-family: $font-title;
+    color: #fff;
+    @include linear-gradient(#ff2c55, #f8492c);
+
+    h1 {
+        margin: 0.5em 0 1em;
+        font-size: 35px;
+        font-weight: normal;
+    }
+}
+
+    .nav {
+        display: table;
+        margin: 0 auto;
+    }
+
+        .nav-list {
+            margin: 0;
+            padding: 0;
+            @include clearfix();
+
+            .nav-item {
+                float: left;
+                margin: 0 25px 0 0;
+                list-style: none;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
