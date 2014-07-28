@@ -5,11 +5,91 @@
 }
 
     .medias-list-item {
+        position: relative;
         float: left;
         list-style: none;
-        padding: 25px;
         width: 33.33%;
-        min-height: 200px;
+        height: 250px;
+        overflow: hidden;
         border: 4px solid #ff2c55;
+        background-size: 100%;
         @include box-sizing(border-box);
+
+        img {
+            width: 100%;
+        }
+
+        &:hover {
+            img {
+                 @include filter(blur(4px));
+            }
+
+            .medias-list-item-title {
+                bottom: -50%;
+            }
+
+            .medias-list-item-description {
+                top: 10%;
+            }
+
+            .medias-list-item-link {
+                bottom: 10%;
+            }
+        }
     }
+
+        .medias-list-item-title {
+            position: absolute;
+            z-index: 1;
+            bottom: 10%;
+            left: 0;
+            padding: 6px 0;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            font-family: $font-title;
+            font-size: 25px;
+            color: #fff;
+            background: #333;
+            @include opacity(0.6);
+            @include text-shadow(0 0 30px #000);
+            @include transition(0.2s $animmation-effect 0.1s);
+        }
+
+        .medias-list-item-description {
+            position: absolute;
+            z-index: 1;
+            top: -50%;
+            left: 0;
+            padding: 6px 10px;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            font-family: $font-title;
+            font-size: 13px;
+            line-height: 1.4em;
+            color: #fff;
+            background: #333;
+            @include opacity(0.8);
+            @include box-sizing(border-box);
+            @include transition(0.2s $animmation-effect 0.2s);
+        }
+
+        .medias-list-item-link {
+            position: absolute;
+            z-index: 1;
+            bottom: -50%;
+            left: 0;
+            margin: 0;
+            padding: 6px 10px;
+            width: 100%;
+            text-align: center;
+            font-family: $font-title;
+            font-size: 13px;
+            line-height: 1.4em;
+            color: #fff;
+            background: #333;
+            @include opacity(0.8);
+            @include box-sizing(border-box);
+            @include transition(0.2s $animmation-effect 0.2s);
+        }
