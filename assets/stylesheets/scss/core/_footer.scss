@@ -1,0 +1,20 @@
+.footer {
+    padding: 35px 0;
+    text-align: center;
+    font-family: $font-title;
+    color: #fff;
+    @include linear-gradient(#322e2d, lighten(#322e2d, 5%));
+
+    ul {
+        display: table;
+        margin: 0 auto;
+        padding: 0;
+        @include clearfix();
+
+        li {
+            float: left;
+            margin: 0 10px;
+            list-style: none;
+        }
+    }
+}

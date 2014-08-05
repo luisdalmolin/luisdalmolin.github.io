@@ -11,7 +11,7 @@
         width: 33.33%;
         height: 250px;
         overflow: hidden;
-        border: 4px solid #ff2c55;
+        border: 4px solid $color-main;
         background-size: 100%;
         @include box-sizing(border-box);
 
@@ -35,6 +35,11 @@
             .medias-list-item-link {
                 bottom: 10%;
             }
+        }
+
+        @media screen and (max-width: $responside-mobile-width) {
+            float: none;
+            width: 100%;
         }
     }
 

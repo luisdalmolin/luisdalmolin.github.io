@@ -1,0 +1,32 @@
+.content {
+    padding: 25px 0;
+
+    @include clearfix();
+}
+
+    .content-title {
+        margin: 0 0 0.8em;
+        font-size: 2.5em;
+        border-bottom: 1px solid $color-main;
+    }
+
+// ===============================================================
+// Post / Projeto
+// ===============================================================
+.post {
+    margin: 0 0 30px;
+    padding: 0 0 30px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+    .content-text,
+    .post-description {
+        a {
+            color: $color-featured;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
