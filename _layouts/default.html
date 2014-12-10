@@ -7,39 +7,45 @@
 
     <title>{{ page.title }}</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Exo:400,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Exo:400,600' rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/stylesheets/css/main.css">
     <link rel="publisher" href="https://plus.google.com/118015701305507171424/posts">
 </head>
 
 <body>
     <header class="header">
-        <h1 class="brand-title">Luís Dalmolin</h1>
+        <div class="container">
+            <a href="/" title="Página inicial">
+                <img src="/assets/images/profile.jpg" alt="" class="header-profile-img">
+            </a>
 
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a class="btn" href="/projetos">Projetos</a>
-                </li>
+            <h1 class="header-title">Luís Dalmolin</h1>
 
-                <li class="nav-item">
-                    <a class="btn" href="/portfolio">Portfólio</a>
-                </li>
-            </ul>
-        </nav>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="btn" href="/projetos">Projetos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="btn" href="/portfolio">Portfólio</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="nav-contacts">
+                <a class="nav-contacts-link nav-contacts-link-twitter" href="https://github.com/luisdalmolin"><i class="fa fa-github fa-lg"></i></a>
+                <a class="nav-contacts-link nav-contacts-link-twitter" href="https://twitter.com/luisdalmolin"><i class="fa fa-twitter fa-lg"></i></a>
+                <a class="nav-contacts-link nav-contacts-link-twitter" href="http://www.linkedin.com/in/luisdalmolin"><i class="fa fa-linkedin fa-lg"></i></a>
+                <a class="nav-contacts-link nav-contacts-link-twitter" href="mailto:luis.nh@gmail.com"><i class="fa fa-envelope fa-lg"></i></a>
+            </nav>
+        </div>
     </header><!-- .header -->
 
     <main class="content">
         {{ content }}
     </main><!-- .content -->
-
-    <footer class="footer">
-        <ul>
-            <li><a class="btn" href="http://twitter.com/luisdalmolin">Twitter</a></li>
-            <li><a class="btn" href="http://github.com/luisdalmolin">Github</a></li>
-            <li><a class="btn" href="http://www.linkedin.com/in/luisdalmolin">LinkedIn</a></li>
-        </ul>
-    </footer>
 
 <script type="text/javascript">
 var _gaq = _gaq || [];
@@ -52,6 +58,5 @@ _gaq.push(['_trackPageview']);
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 </script>
-
 </body>
 </html>

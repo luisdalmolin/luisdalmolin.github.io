@@ -1,32 +1,40 @@
+// ================================================================================================
+// Buttons
+// ================================================================================================
+
 .btn {
     display: inline-block;
-    padding: 0.5em 1em;
-    background: none;
+    padding: 12px 25px 10px;
+    font-size: 18px;
+    @include linear-gradient(#a6a8ab, #808184);
     color: #fff;
+    border: none;
     text-decoration: none;
-    font-size: 15px;
-    border: 1px solid #fff;
-    @include border-radius(4px);
-    @include transition(0.2s linear);
+    @include border-radius(.45em);
+    @include transition(.2s linear);
 
-    &:hover {
-        background: #fff;
-        color: $color-featured;
-        @include transition(0.2s linear);
+    &:hover,
+    &.active {
+        @include linear-gradient(#76c7cb, #00a69c);
+        @include transition(.2s linear);
+    }
+
+    &[disabled] {
+        cursor: default;
+        @include opacity(.6);
     }
 }
 
-.btn-primary {
-    background: $color-main;
-    color: #fff;
-    border: 1px solid $color-main;
+.btn-secundary {
+    padding: 10px 23px 8px;
+    background: none;
+    border: 2px solid #59595b;
+    color: #59595b;
+    @include box-sizing(border-box);
 
     &:hover {
-        background: #fff;
-        color: $color-main;
+        background: #59595b;
+        border: 2px solid #fff;
+        color: #fff;
     }
-}
-
-.btn-small {
-    font-size: 13px;
 }
