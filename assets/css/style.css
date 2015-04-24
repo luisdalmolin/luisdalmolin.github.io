@@ -1,0 +1,35 @@
+body {
+    font-family: 'Cabin';
+    text-align: center;
+    background: #111;
+    color: #fff;
+}
+
+.container {
+    padding: 25px 25px;
+}
+
+    .profile-img {
+        display: inline-block;
+        margin: 25px 0 100px;
+        width: 250px;
+        border-radius: 50%;
+    }
+
+    .social {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 25px 0;
+        width: 100%;
+        background: rgba(255, 255, 255, .2);
+    }
+
+        .social-item {
+            display: inline-block;
+            margin: 0 20px 0 0;
+        }
+
+            .social-item img {
+                height: 75px;
+            }
